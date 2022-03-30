@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습3 - 하이퍼링크</title>
+</head>
+<body>
+    <h2>하이퍼링크 요소</h2>
+    <p>하이퍼링크란? 해당 요소를 클릭했을 때 다른 사이트나 페이지로 이동하거나
+        해당 영역으로 이동하는 것을 말하며, a 요소를 활용한다.
+        a요소는 인라인 요소로 출력된다.
+    </p>
+    <!-- 일반적인 문서 요소(태그)는 필수 속성을 가지며, 필수 속성이 없을 경우도
+    있으며, 그 밖에 필요에 따라 선택 속성을 지정할 수도 있음 
+    <태그 필수속성="값" 선택속성="값">텍스트</태그>
+    -->
+    <!-- attribute : 태그의 속성, properties : 스타일의 속성 -->
+    <!-- 아래의 a요소에서 href는 필수속성, title은 선택속성임 -->
+    <a href="http://www.naver.com" title="네이버로 이동" target="_blank">
+        외부사이트</a>
+    <a href="html02.html" title="연습2로 이동">연습2</a><br>
+    <a href="mailto:kkt09072@naver.com">사랑하는 애인에게</a><br>
+    <a href="tel:010-3033-5643">전화걸기</a><br>
+    <a href="sms:010-3033-5643">문자보내기</a><br>
+    <a href="능력단위.xlsx">문서 다운로드</a><br>
+    <a href="#ft">푸터로 이동</a>
+    <div style="height:1800px;background-color:#333;color:#fff;
+    font-size:100px;">
+        본문 영역
+    </div>
+    <footer id="ft">
+        <h1>푸터</h1><a href="#">맨 위로 이동</a>
+    </footer>
+</body>
+</html>

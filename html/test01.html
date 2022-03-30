@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습 - 회원가입</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset style="width: 60%; color: blue;">
+            <legend>회원가입</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="m_id"> 아이디
+                        </th>
+                        <td>
+                            <input type="text" name="m_id" id="m_id" placeholder="아이디 입력" autofocus required>
+                            <input type="button" value="중복확인" onclick='alert("처리 되었습니다.")'>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="pwd">비밀번호</label>
+                        </th>
+                        <td>
+                            <input type="password" name="pwd" id="pwd" placeholder="비밀번호 입력" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="pwd_c">비밀번호 확인</label>
+                        </th>
+                        <td>
+                            <input type="password" name="pwd_c" id="pwd_c" placeholder="비밀번호 확인" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="m_name">이름</label>
+                        </th>
+                        <td>
+                            <input type="text" name="m_name" id="m_name" placeholder="이름 입력" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="m_w">성별</label>
+                        </th>
+                        <td>
+                            <input type="radio" name="m_w" id="m_w" checked><label for="m_w">남자</label>
+                            <input type="radio" name="m_w" id="m_w2"><label for="m_w2">여자</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="hobby">취미</label>
+                        </th>
+                        <td>
+                            <input type="checkbox" name="ch1" id="ch1">
+                            <label for="ch1">종이접기</label>
+                            <input type="checkbox" name="ch2" id="ch2">
+                            <label for="ch2">여행</label>
+                            <input type="checkbox" name="ch3" id="ch3">
+                            <label for="ch3">캠핑</label>
+                            <input type="checkbox" name="ch4" id="ch4">
+                            <label for="ch4">수영</label>
+                            <input type="checkbox" name="ch5" id="ch5">
+                            <label for="ch5">낚시</label>
+                            <input type="checkbox" name="ch6" id="ch6">
+                            <label for="ch6">코딩</label>
+                            <input type="checkbox" name="ch7" id="ch7">
+                            <label for="ch7">수학</label>
+                        </td>
+                    </tr>
+                    <tr>
+                    <th>
+                        <label for="hp_f">휴대전화</label>
+                    </th>
+                        <td>
+                            <select name="company" id="company" style="width: 60px;" >
+                                <option value="sk">SK</option>
+                                <option value="kt">KT</option>
+                                <option value="lg">LG</option>
+                            </select>
+                            <input type="text" name="hp_f" id="hp_f" size="3" maxlength="3">
+                            <input type="text" name="hp_c" id="hp_c" size="4" maxlength="4">
+                            <input type="text" name="hp_e" id="hp_e" size="4" maxlength="4">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="birth">생년월일</label>
+                        </th>
+                        <td>
+                            <input type="date" name="birth" id="birth">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="e-mail">이메일</label>
+                        </th>
+                        <td>
+                            <input type="text" name="e-mail" id="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="pic">사진</label>
+                        </th>
+                        <td>
+                            <input type="file" name="pic" id="pic" accept="image/*">                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="any">하고싶은 말</label>
+                        </th>
+                        <td>
+                            <textarea name="any" id="any" cols="50" rows="10"></textarea>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+
+
+        </fieldset>
+
+    </form>
+</body>
+</html>

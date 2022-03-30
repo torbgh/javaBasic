@@ -1,0 +1,21 @@
+pattern(정규 표현식) : 입력의 유효성을 검증하는 속성
+
+글자수 제한 : 입력된 내용이 6 개 이상의 문자를 포함해야함
+<input type="text" name="id" pattern=".{6,}">
+
+암호 규칙 : 입력된 내용이 적어도 하나의 숫자와 대문자와 소문자를 포함하여 8 자 이상이어야 함
+<input type="password" name="pw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+이메일 규칙 : 입력된 내용에 반드시 @를 포함하는 이메일 주소이어야 함
+<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+
+검색어 규칙 : 입력된 검색어에 ' 또는 "를 포함하지 않아야 함
+<input type="search" name="keyword" pattern="[^'\x22]">
+
+URL 규칙 : http:// 또는 https:// 로 시작하고, // 뒤에는 적어도 하나이상의 문자가 있어야 함
+<input type="url" name="website" pattern="https?://.+">
+
+
+
+
+

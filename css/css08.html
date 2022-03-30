@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습8</title>
+    <style>
+        input[type="radio"]:not(:checked) + label {font-size: 24px; color: black; background-color: #fff; transition: 0.5s;}
+        input[type="radio"]:checked + label {font-size: 40px; color: #fff; background-color: black;}
+        input:enabled {background-color: aqua;}
+        input:read-only {background-color: yellow;}
+        input:disabled {background-color: deepskyblue;}
+    </style>
+</head>
+<body>
+    <h2>상태 선택자 및 부정 선택자</h2>    
+    <input type="radio" name="ra" id="ra1" checked><label for="ra1">개발자</label><br>
+    <input type="radio" name="ra" id="ra2"><label for="ra2">퍼블리셔</label><br>
+    <input type="radio" name="ra" id="ra3"><label for="ra3">기획자</label><br>
+    <hr>
+    <input type="text" value="test1" id="id" disabled><br><br>
+    <input type="text" value="test2" id="name"><br><br>
+    <input type="text" value="test3" id="nick" readonly><br><br>
+</body>
+</html>

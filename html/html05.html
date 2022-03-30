@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습5 - 시멘틱 요소</title>
+</head>
+<body>
+    <h2>시멘틱(개념적) 요소(태그) - 블록 요소</h2>
+    <p>각 영역에 대한 이름이나 구분을 하기 위한 태그</p>
+    <p>div : 본인이 원하는 만큼의 영역을 구분하고, 이름을 부여할 때 사용</p>
+    <p>header : 헤더 영역을 구분할 용도</p>
+    <p>footer : 푸터 영역을 구분할 용도</p>
+    <p>figure : 비주얼 배너가 표시되는 영역을 구분할 용도</p>
+    <p>aside : 사이드바 영역을 구분할 용도</p>
+    <p>section : 콘텐츠 영역을 분리할 목적으로 활용</p>
+    <p>article : 기사글 처럼 글, 이미지, 제목 등을 묶어서 분리하는 용도</p>
+    <p>nav : 메뉴 영역을 구분할 용도</p>
+    <p>hgroup : 제목 그룹을 묶는 용도</p>
+
+    <hr>
+    <h3>사이트의 기본 구조</h3>
+    <div class="wrap">
+        <header class="hd">
+            <nav class="tnb">상단메뉴</nav>
+            <nav class="gnb">메인메뉴</nav>
+        </header>
+        <div class="content">
+            <div class="con">
+                <figure id="vs">비주얼 배너</figure>
+                <section class="page">
+                    <h2>페이지 제목</h2>
+                    <p>페이지 내용</p>
+                </section>
+                <article class="art">
+                    <h3>기사 제목</h3>
+                    <img src="" alt="기사 관련 이미지">
+                    <p>기사 내용</p>
+                </article>
+            </div>
+            <aside class="sidebar">
+                사이드바
+                <nav class="lnb">로컬 메뉴</nav>
+            </aside>
+        </div>
+        <footer class="ft">
+            <nav class="fnb">하단 메뉴</nav>
+            <address>카피라이트</address>
+        </footer>
+    </div>
+</body>
+</html>

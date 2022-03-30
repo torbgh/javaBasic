@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습4 - 미디어 관련 요소</title>
+</head>
+<body>
+    <h2>미디어 관련 요소 - 인라인 방식 요소</h2>
+    <h3>이미지 요소</h3>
+    <p>특정 위치에 있는 이미지를 표시하는 요소로 img 태그를 활용하여
+        필요한 이미지를 표시할 수 있으며, 필수속성으로 src와 alt가 있으며,
+        src는 이미지의 위치와 파일명을 지정하며, alt는 이미지가 제대로 표시되지
+        않을 경우 보일 대체 텍스트를 지정한다.
+    </p>
+    <p>ex1) 현재 폴더의 img1.jpg</p>
+    <img src="img1.jpg" alt="아이브 유진" title="유진">
+    <p>ex2) 상위 폴더의 img 폴더 안에 img2.jpg</p>
+    <img src="../img/img2.jpg" alt="아이브 가을" title="가을"> 
+    <p>ex3) 현재 폴더의 pic 폴더 안에 img3.jpg</p>
+    <img src="./pic/img3.jpg" alt="아이브 레이" title="레이">
+    <p>ex4) 임시 이미지의 표시</p>
+    <img src="https://placehold.it/600x400/333" alt="임시이미지">
+    <p>ex5) 더미 이미지의 표시1</p>
+    <img src="https://lorempixel.com/600/400" alt="랜덤이미지">
+    <p>ex6) 더미 이미지의 표시2</p>
+    <img src="https://placeimg.com/600/400/any" alt="더미 이미지">
+    <hr>
+    <h3>사운드 요소</h3>
+    <p>사운드 요소는 소리, 음성, 동물 울음 소리, 음향 효과 등을 말하며,
+        audio 태그를 활용한다. src 속성은 필수속성이며, 만약, 생략했을 경우는
+        내부에 source 태그로 사운드를 연결할 수 있음.
+    </p>
+    <audio src="../audio/audio1.mp3" autoplay controls muted></audio>
+    <!-- mp3, ogg, wav 사운드 등은 일부 브라우저에 실행할 수도 있고, 
+        실행하지 못할 수 있으므로 3가지 타입을 가진 파일 3개를 모두 준비 
+        크로스브라우징 : 하나의 문서를 각 각 여러 브라우저에서 실행하는 
+    해보는 것 -->
+    <audio controls loop preload>
+        <source type="audio/mp3" src="./audio/audio1.mp3">
+        <source type="audio/ogg" src="./audio/audio1.ogg">
+        <source type="audio/wav" src="./audio/audio1.wav">
+    </audio>
+    <video src="../video/video1.mp4" autoplay controls muted></video>
+    <!-- mp4, ogv, webm 비디오 등도 브라우저마다 지원하는 형식이 달라
+    지원되지 못하는 경우 실행이 되지 않을 수 있으므로 source 태그를 활용하여
+    크로스브라우징 처리를 해야한다. -->
+    <video poster="espa.jpg" controls loop>
+        <source type="video/mp4" src="../video/video1.mp4">
+        <source type="video/ogg" src="../video/video1.ogv">
+        <source type="video/webm" src="../video/video1.webm">
+    </video>
+    <!--
+        <태그 속성="값"></태그>
+    -->
+    <iframe width="1280" height="720" src="https://www.youtube.com/embed/Amq-qlqbjYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe src="espa.jpg" frameborder="0" scrolling="no"></iframe>
+</body>
+</html>
